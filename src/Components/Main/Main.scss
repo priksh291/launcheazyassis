@@ -11,20 +11,32 @@ $background-color_3: whitesmoke;
 	padding-left: 90px;
 	font-family: $font-family_1;
 	background-color: $background-color_1;
+	
 }
 .main_section {
 	position: relative;
 	display: flex;
+	gap: 5rem;
+	
+	
+}
+.template_section {
+	position: relative;
+	// margin-left: 100px;
+	margin-left: 6rem;
+	
+	
 }
 .search_filter {
 	position: relative;
 	display: flex;
-	justify-content: space-between;
+	// justify-content: space-between;
+	gap: 23vw;
+	// width: vw;
+	
+	align-items: center;
 }
-.template_section {
-	position: relative;
-	margin-left: 100px;
-}
+
 .category {
 	display: flex;
 	>input {
@@ -51,8 +63,9 @@ $background-color_3: whitesmoke;
 .searchbar {
 	>input {
 		position: relative;
-		width: 384px;
-		height: 25px;
+		min-width: 300px;
+		width: 33vw;
+		height: 40%;
 		padding: 12px;
 		&::placeholder {
 			font-size: 19px;
@@ -61,6 +74,10 @@ $background-color_3: whitesmoke;
 	input {
 		font-size: 19px;
 	}
+}
+.filter-section{
+	position: relative;
+	// width: 29vw;
 }
 .filtermenu {
 	position: relative;
@@ -120,8 +137,13 @@ $background-color_3: whitesmoke;
 	position: relative;
 	display: flex;
 	gap: 45px;
+	width: 100%;
+	max-width: 100%;
 	justify-content: space-evenly;
 	margin-top: 34px;
+	overflow-x: auto;
+	white-space: nowrap;
+	width: fit-content;
 }
 .image_frame {
 	position: relative;
@@ -129,6 +151,7 @@ $background-color_3: whitesmoke;
 	border-radius: 12px;
 	padding: 2px;
 	overflow: hidden;
+	
 	width: 288px;
 	>div {
 		>img {
@@ -175,7 +198,8 @@ $background-color_3: whitesmoke;
 	background-color: $background-color_3;
 	z-index: 1;
 	border-radius: 5px;
-	width: 410px;
+	min-width: 300px;
+	width: 33vw;
 	border-top: none;
 }
 .suggestions {
@@ -189,30 +213,55 @@ $background-color_3: whitesmoke;
 		color: $color_1;
 	}
 }
-@media screen and (max-width:380px) {
-	.category_section {
+// @media screen and (max-width:380px) {
+// 	.category_section {
+// 		display: none;
+// 	}
+// 	.template_section {
+// 		margin-left: -24px;
+// 	}
+// 	.search_filter {
+// 		display: flex;
+// 		flex-direction: column;
+// 		gap: 25px;
+// 	}
+// 	.searchbar {
+// 		input {
+// 			width: 250px;
+// 		}
+// 	}
+// 	.image_section {
+// 		display: flex;
+// 		overflow-x: auto;
+// 		white-space: nowrap;
+// 	}
+// 	.image_frame {
+// 		margin-right: 10px;
+// 		white-space: normal;
+// 	}
+// }
+
+@media screen and (max-width:1284px){
+	.category_section{
 		display: none;
 	}
-	.template_section {
-		margin-left: -24px;
-	}
-	.search_filter {
-		display: flex;
-		flex-direction: column;
-		gap: 25px;
-	}
-	.searchbar {
-		input {
-			width: 250px;
-		}
-	}
-	.image_section {
-		display: flex;
+	.image_section
+	{
 		overflow-x: auto;
 		white-space: nowrap;
 	}
-	.image_frame {
-		margin-right: 10px;
-		white-space: normal;
+	
+}
+@media screen and (max-width:835px) {
+	.search_filter{
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		align-items: flex-start;
+	}
+}
+@media  screen and (max-width:510px) {
+	.main_body{
+		padding: 0;
 	}
 }

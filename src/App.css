@@ -1,12 +1,34 @@
-#root {
-  max-width: 100%;
-  max-height: 100%;
-  
-  
-}
+
 
 body{
   margin: 0;
   
 }
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
+html {
+  /* this makes sure the padding and the border is included in the box sizing */
+  box-sizing: border-box;
+  /* overflow-y: hidden; */
+  font-size: 14px;
+  
+}
+
+html body {
+  padding: 0;
+  margin: 0;
+  overflow-y: inherit;
+  overflow-x: hidden;
+}
+
+.App {
+  
+  height: 100vh;
+  width: 100vw;
+  /* max-width: 900px; */
+  /* min-width: 100vw; */
+  padding: 1rem;
+  
+}

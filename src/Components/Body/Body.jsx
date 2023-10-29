@@ -1,10 +1,10 @@
-import React, {useState,useEffect} from "react";
-import "./Body.css";
+import React from "react";
+import "./Body.scss";
 const Body = () => {
 
 
   return (
-    <div className="body">
+    <div className="bodi">
       <div className="Intro">
         <div className="heading">MARKETPLACE</div>
         <div className="scrollar">

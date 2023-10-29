@@ -2,7 +2,13 @@ $color_1: #6F6F6F;
 $color_2: #24A148;
 $font-family_1: Inter, sans-serif;
 $background-color_1: white;
-
+body{
+	// background: linear-gradient(180deg, #DEFBE6 0%, rgba(222, 251, 230, 0) 100%);
+	max-width: 100vw;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
 @keyframes scroll {
 	0% {
 		top: 0;
@@ -23,15 +29,25 @@ $background-color_1: white;
 		top: 0;
 	}
 }
-.body {
+.bodi {
 	background: linear-gradient(180deg, #DEFBE6 0%, rgba(222, 251, 230, 0) 100%);
+	width: 100%;
 	font-family: $font-family_1;
 	position: relative;
+	// width: 100vw;
+	
+	
+	
+	
 }
 .Intro {
 	padding: 64px;
 	padding-left: 90px;
+	padding-right: 90px;
 	position: relative;
+	width: 100vw;
+	// width: 90%;
+
 }
 .heading {
 	font: bold;
@@ -41,10 +57,14 @@ $background-color_1: white;
 .scrollar {
 	position: relative;
 	overflow: hidden;
+	// overflow-y: hidden;
 	color: $color_2;
 	gap: 20px;
-	margin-top: 40px;
+	// margin-top: 40px;
+	margin-top: 3vh;
 	margin-left: -45px;
+	width: 100%;
+	
 }
 .templates {
 	position: relative;
@@ -56,16 +76,20 @@ $background-color_1: white;
 	top: 0;
 	height: 50px;
 	margin-bottom: 84px;
+	width: 90%;
 	li {
-		font-size: 75px;
+		// font-size: 75px;
+		// font-size: 4.6rem;
+		font-size: calc(3rem + 1.2vw);
 		opacity: 1;
 	}
 }
 .tagline {
 	position: relative;
 	margin-top: 15px;
-	font-size: 65px;
-	flex-wrap: nowrap;
+	// font-size: 4.2rem;
+	font-size: calc(2.8rem + 1vw);
+	flex-wrap: wrap;
 }
 .description {
 	position: relative;
@@ -74,25 +98,27 @@ $background-color_1: white;
 	margin-top: 25px;
 	flex-wrap: nowrap;
 }
-@media only screen and (max-width: 1284px) {
-	.body {
-		background-color: $background-color_1;
-		background: none;
-	}
-}
-@media screen and (max-width:380px) {
-	.body {
-		background: linear-gradient(180deg, #DEFBE6 0%, rgba(222, 251)100%);
-	}
-	.templates {
-		li {
-			font-size: 40px;
-		}
-	}
-	.tagline {
-		font-size: 40px;
-	}
-	.description {
-		font-size: 16px;
-	}
-}
+// @media only screen and (max-width: 1284px) {
+// 	.body {
+// 		background-color: $background-color_1;
+// 		background: none;
+// 	}
+// }
+// @media screen and (max-width:380px) {
+// 	.body {
+// 		background: linear-gradient(180deg, #DEFBE6 0%, rgba(222, 251,230,0)100%);
+// 	}
+// 	.templates {
+// 		li {
+// 			font-size: 40px;
+// 		}
+// 	}
+// 	.tagline {
+// 		font-size: 40px;
+// 	}
+// 	.description {
+// 		font-size: 16px;
+// 	}
+// }
+
+

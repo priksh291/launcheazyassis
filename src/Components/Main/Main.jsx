@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./Main.css";
+import "./Main.scss";
 import frame1 from "../Body/assets/frame1.png";
 import frame2 from "../Body/assets/frame2.png";
 import frame3 from "../Body/assets/frame3.png";
-import frame4 from "../Body/assets/frame4.png";
+// import frame4 from "../Body/assets/frame4.png";
 const Main = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState("Recent");
@@ -92,7 +92,7 @@ const Main = () => {
                   ))}
               </div>
             </div>
-            <div>
+            <div className="filter-section">
               {isAnyCategoryChecked && (
                 <div className="filtermenu" onClick={toggleDropdown}>
                   <div className="sortheading">
